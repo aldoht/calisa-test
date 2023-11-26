@@ -101,6 +101,7 @@ main {
 
 .main-banner > img {
     width: calc(100% + 4rem);
+    height: 19rem;
     margin-left: -2rem;
 }
 
@@ -157,6 +158,12 @@ small {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .main-banner > img {
+        height: 22rem;
+    }
+    .material-icons {
+        font-size: 100%;
     }
     .footer-container {
         flex-direction: column;
