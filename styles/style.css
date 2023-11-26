@@ -136,11 +136,12 @@ small {
     .navbar-logo {
         visibility: hidden;
         height: 0;
+        width: 0;
         padding-bottom: 0;
     }
     .navbar-logo-mobile {
         visibility: visible;
-        width: 4rem;
+        max-width: 4rem;
         height: fit-content;
         margin-left: -50%;
         padding-bottom: 0.5rem;
