@@ -142,7 +142,7 @@ small {
     .navbar-logo-mobile {
         visibility: visible;
         max-width: 4rem;
-        max-height: 4rem;
+        max-height: 2rem;
         height: fit-content;
         margin-left: -50%;
         padding-bottom: 0.5rem;
