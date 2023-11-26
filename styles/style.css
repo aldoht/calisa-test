@@ -134,6 +134,7 @@ small {
 
 /* Mobile version */
 @media screen and (max-width: 780px) {
+    /* Navigation bar */
     .navbar-logo {
         visibility: hidden;
         height: 0;
@@ -159,12 +160,20 @@ small {
         justify-content: center;
         align-items: center;
     }
-    .main-banner > img {
-        height: 22rem;
+    .navbar-search-container form {
+        flex-direction: column-reverse;  
+    }
+    .navbar-search-container button[type="submit"] {
+        visibility: hidden;
     }
     .material-icons {
         font-size: 100%;
     }
+    /* Main section */
+    .main-banner > img {
+        height: 22rem;
+    }
+    /* Footer */
     .footer-container {
         flex-direction: column;
         justify-content: space-evenly;
