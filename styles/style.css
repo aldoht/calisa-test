@@ -19,6 +19,7 @@ body {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 .navbar > a {
@@ -155,20 +156,49 @@ main {
 }
 
 .categorias, .servicios, .marcas {
-    margin-top: 5rem;
+    margin: 3rem 0;
     text-align: center;
+}
+
+/* Productos */
+.cat-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-evenly;
+    gap: 5%;
+}
+
+.cat-container > div {
+    position: relative;
+    border-radius: 5%;
+    transition: 0.5s ease-in-out;
+}
+
+.cat-container img {
+    border-radius: 5%;
+}
+
+.cat-container > div:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 10px rgba(192, 192, 192, 0.39);
+}
+
+.cat-item {
+    margin: 1rem 0;
 }
 
 /* Servicios */
 .servicios-container {
-    margin-top: 5rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .servicios-container > div {
-    z-index: 5;
+    margin: 1rem 0;
     position: relative;
     border-radius: 5%;
     transition: 0.5s ease-in-out;
