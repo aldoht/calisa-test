@@ -111,15 +111,16 @@ main {
     font-size: larger;
 }
 
-.gradient {
-    height: calc(90vh - 2rem);
-    width: calc(100% + 4rem);
-    margin-top: 0;
-    margin-left: -2rem;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, #263238 0%, #37474f 55%, #455a64 90%); 
-    background-size: 400% 400%;
-    animation: grad 20s ease infinite;
+.bg-img {
+    background-image: url(../photos/main_img.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    filter: brightness(50%);
 }
 
 @keyframes grad {
@@ -132,12 +133,12 @@ main {
 
 .header-container {
     display: flex;
-    width: calc(100% - 4rem);
-    margin-left: 2rem;
-    height: 100%;
+    height: calc(90vh - 2rem);
+    width: calc(100% + 4rem);
+    margin-left: -2rem;
     align-items: center;
     justify-content: space-evenly;
-    animation: header 1.5s 1 ease-in-out;
+    margin-bottom: 5rem;
 }
 
 @keyframes header {
@@ -162,6 +163,10 @@ main {
 
 .main-content > h1 {
     font-weight: 400;
+}
+
+.main-content, .main-image {
+    animation: header 1.5s 1 ease-in-out;
 }
 
 .categorias, .servicios, .marcas {
